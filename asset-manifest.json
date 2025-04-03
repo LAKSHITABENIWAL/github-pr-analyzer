@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/github-pr-analyzer/static/js/main.a14bad5a.js",
+    "index.html": "/github-pr-analyzer/index.html",
+    "main.a14bad5a.js.map": "/github-pr-analyzer/static/js/main.a14bad5a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a14bad5a.js"
+  ]
+}
