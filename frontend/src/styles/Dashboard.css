@@ -1,0 +1,15 @@
+.dashboard {
+    padding: 20px;
+  }
+  
+  .dashboard ul {
+    list-style: none;
+  }
+  
+  .dashboard li {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
