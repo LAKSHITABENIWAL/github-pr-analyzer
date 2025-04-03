@@ -1,7 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const session = require("express-session");
+const dotenv = require("dotenv");
 require("dotenv").config();
+const path = require("path");
 
 const authRoutes = require("./routes/auth");
 const aiAnalysisRoutes = require("./routes/aiAnalysis");
@@ -13,8 +15,13 @@ const PORT = 3000;
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3001", // Allow requests from the frontend
-    credentials: true, // Allow cookies to be sent
+    origin: [
+      'http://localhost:5173',
+      'https://lakshitabeniwal.github.io'  // Your specific GitHub Pages URL
+    ],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
   })
 );
 
